@@ -1,8 +1,10 @@
 import {configureStore} from "@reduxjs/toolkit";
 
-let store = configureStore({
-    reducer:{
+import movieReducer from "./slices/movi.slice";
 
+let store = configureStore({
+    reducer: {
+        movie: movieReducer
     }
 });
 
