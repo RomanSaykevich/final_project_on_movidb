@@ -3,6 +3,7 @@ import {Routes, Route} from "react-router-dom";
 import './App.css';
 import Layout from "./components/Layout/Layout";
 import MoviesList from "./components/MoviesList/MoviesList";
+import MovieDetails from "./pages/MovieDetails/MovieDetails";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
             <Routes>
                 <Route path={'/'} element={<Layout/>}>
                     <Route index element={<MoviesList/>}/>
+                    <Route path={':id'} element={<MovieDetails/>}/>
                 </Route>
             </Routes>
         </div>

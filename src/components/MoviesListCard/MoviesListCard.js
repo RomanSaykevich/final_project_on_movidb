@@ -7,8 +7,8 @@ import './MovieListCardStyle.css';
 
 const MoviesListCard = ({movie}) => {
 
+const {id,poster_path, original_title, vote_average} = movie;
 
-    const {poster_path, original_title, vote_average} = movie;
 
     return (
         <div className='MoviesListCard'>
@@ -16,7 +16,7 @@ const MoviesListCard = ({movie}) => {
             <div className='MoviesListCard-img'><img src={IMG_IP + poster_path} alt="poster"/></div>
 
             <div className='MoviesListCard-info'>
-                <NavLink to={'/'}>
+                <NavLink to={id.toString()} state={movie}>
                     <div className='MoviesListCard-title'>{original_title}</div>
                 </NavLink>
 
