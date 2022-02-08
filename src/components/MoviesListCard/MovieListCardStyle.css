@@ -1,0 +1,29 @@
+.MoviesListCard {
+    width: 19%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.MoviesListCard-img > img {
+    max-width: 100%;
+    border-radius: 5px;
+
+}
+
+.MoviesListCard-title {
+    text-align: start;
+    font-weight: bold;
+    color: cornsilk;
+    width: 75%;
+    box-sizing: border-box;
+}
+
+.MoviesListCard-info{
+    max-width: 100%;
+    height: 4rem;
+    background: darkmagenta;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

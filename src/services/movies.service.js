@@ -3,5 +3,6 @@ import {urls} from "../constants";
 
 
 export const moviesService = {
-    getMovies: () => axiosService.get(urls.movies).then(value => value.data)
+    getMovies: (page) => axiosService.get(urls.movies(page)).then(value => value.data),
+    getById: (id) => axiosService.get(`${urls.movies}/${id}`).then(value => value.data)
 }
