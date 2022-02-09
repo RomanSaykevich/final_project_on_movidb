@@ -3,7 +3,7 @@ import {useDispatch} from "react-redux";
 import {NavLink} from "react-router-dom";
 
 import './HeaderStyle.css'
-import {getAllMovies} from "../../store/slices";
+import {getAllMovies} from "../../store";
 
 
 const Header = () => {
@@ -23,14 +23,16 @@ const Header = () => {
                     <li>Home</li>
                 </NavLink>
 
-                <NavLink to={'/'}>
-                    <li>All Films</li>
+                <NavLink to={'/genres'}>
+                    <li>All Genres</li>
                 </NavLink>
 
                 <NavLink to={'/genres'}>
-                    <li>Genres</li>
+                    <li>wwwww</li>
                 </NavLink>
             </ul>
+
+
             
             <div className='search'>
                 <input className='search-inp' type="search" placeholder='search...'/>

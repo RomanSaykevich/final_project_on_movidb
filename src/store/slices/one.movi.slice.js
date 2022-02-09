@@ -8,7 +8,6 @@ export const getOneMovieById = createAsyncThunk(
 
     async (id) => {
         const oneMovie = await moviesService.getMovieById(id);
-        console.log(oneMovie);
         return oneMovie
     }
 )
