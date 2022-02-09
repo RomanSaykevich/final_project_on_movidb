@@ -16,7 +16,7 @@ const MoviesList = () => {
 
     useEffect(() => {
         dispatch(getAllMovies(page));
-    }, [page]);
+    }, []);
 
 
     const submitPrev = useCallback(() => {
@@ -44,7 +44,6 @@ const MoviesList = () => {
             </div>
 
         </div>
-
 
     );
 };

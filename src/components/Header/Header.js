@@ -31,6 +31,10 @@ const Header = () => {
                     <li>Genres</li>
                 </NavLink>
             </ul>
+            
+            <div className='search'>
+                <input className='search-inp' type="search" placeholder='search...'/>
+            </div>
         </div>
     );
 

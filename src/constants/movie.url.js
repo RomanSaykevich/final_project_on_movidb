@@ -1,1 +1,0 @@
-export const MovieUrl = 'https://api.themoviedb.org/3/movie';

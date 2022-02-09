@@ -1,7 +1,7 @@
 .header {
     width: 100%;
     min-height: 100px;
-    background: midnightblue;
+    background: #22254b;
     color: white;
     text-align: center;
 }
@@ -13,8 +13,6 @@
 }
 
 .header > ul > a {
-    color: bisque;
-    text-decoration: none;
     list-style: none;
     margin-left: 5rem;
     font-weight: bold;
@@ -23,18 +21,34 @@
 
 .layout-btns {
     max-width: 100%;
-    background: cadetblue;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .layout-btns > button {
-    background: gainsboro;
+    background: #373b69;
     width: 20rem;
     height: 2rem;
     font-weight: bold;
-    color: blue;
     border: 0.1rem solid blueviolet;
     border-radius: 1rem;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+}
+
+
+.search-inp {
+    background-color: transparent;
+    border: 2px solid #373b69;
+    border-radius: 30px;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
 }

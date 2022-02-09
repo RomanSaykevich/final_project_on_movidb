@@ -3,7 +3,6 @@ import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import {moviesService} from "../../services";
 
 
-
 export const getOneMovieById = createAsyncThunk(
     'movieOneSlice/getOneMovieById',
 
@@ -15,7 +14,7 @@ export const getOneMovieById = createAsyncThunk(
 )
 
 const initialState = {
-    movieO: [],
+    movieO: {},
 }
 
 const movieOneSlice = createSlice({
