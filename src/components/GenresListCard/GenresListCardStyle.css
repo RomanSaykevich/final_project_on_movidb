@@ -1,5 +1,6 @@
 .GenresListCard {
-    max-width: 20%;
+    max-width: 100%;
+    margin-bottom: 1.8rem;
 }
 
 .GenresListCard-a{

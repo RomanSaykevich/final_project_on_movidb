@@ -4,6 +4,7 @@ import {Outlet} from "react-router-dom";
 
 import {getAllGenres} from "../../store";
 import GenresListCard from "../../components/GenresListCard/GenresListCard";
+import './GenresListStyle.css';
 
 
 const GenresList = () => {

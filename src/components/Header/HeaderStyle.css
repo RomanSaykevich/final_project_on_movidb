@@ -4,6 +4,7 @@
     background: #22254b;
     color: white;
     text-align: center;
+    font-size: 2rem;
 }
 
 .header > ul {
@@ -16,8 +17,10 @@
     list-style: none;
     margin-left: 5rem;
     font-weight: bold;
+    font-size: 1.5rem;
     margin-top: 2rem;
 }
+
 
 .layout-btns {
     max-width: 100%;

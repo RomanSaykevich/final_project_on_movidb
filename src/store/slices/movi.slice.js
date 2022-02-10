@@ -8,7 +8,6 @@ export const getAllMovies = createAsyncThunk(
 
     async (page) => {
         const movies = await moviesService.getMovies(page);
-
         return movies
     }
 )

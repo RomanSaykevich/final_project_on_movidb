@@ -26,10 +26,6 @@ const Header = () => {
                 <NavLink to={'/genres'}>
                     <li>All Genres</li>
                 </NavLink>
-
-                <NavLink to={'/genres'}>
-                    <li>wwwww</li>
-                </NavLink>
             </ul>
 
 

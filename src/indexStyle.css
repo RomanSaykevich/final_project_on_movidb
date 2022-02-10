@@ -14,3 +14,7 @@ body {
     color: white;
     text-decoration: none;
 }
+
+* > a:hover{
+    color: deeppink;
+}

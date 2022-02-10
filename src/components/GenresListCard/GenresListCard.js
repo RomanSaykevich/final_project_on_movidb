@@ -7,7 +7,9 @@ const GenresListCard = ({genr:{id, name}}) => {
 
     return (
         <div className='GenresListCard'>
-            <NavLink to={'/'}><h2 className='GenresListCard-a'>{name}</h2></NavLink>
+            <NavLink to={id.toString()}>
+                <h2 className='GenresListCard-a'>{name}</h2>
+            </NavLink>
         </div>
     );
 };
