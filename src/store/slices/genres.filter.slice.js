@@ -5,16 +5,15 @@ import {moviesService} from "../../services";
 export const getGenresFilterById = createAsyncThunk(
     'genresFilterSlice/getGenresFilterById',
 
-    async (id, page) => {
+    async ({id, page}) => {
         const oneGenresF = await moviesService.getAllFG(id, page)
+        console.log(page);
         return oneGenresF
-    }
-)
-
+    })
 
 const initialState = {
     genresFilter: [],
-    page:1,
+    page: 1,
 }
 
 const genresFilterSlice = createSlice({
@@ -29,7 +28,6 @@ const genresFilterSlice = createSlice({
             state.status = 'fulfilled'
             state.genresFilter = action.payload
             state.page = action.payload.page
-
         },
         [getGenresFilterById.rejected]: (state, action) => {
 

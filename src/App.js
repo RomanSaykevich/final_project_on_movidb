@@ -20,9 +20,9 @@ function App() {
                         <Route index element={<MoviesList/>}/>
                         <Route path={':id'} element={<GenresFilterFilms/>}>
                             <Route path={':id'} element={<MovieDetails/>}/>
-
                         </Route>
                     </Route>
+
                 </Route>
             </Routes>
         </div>

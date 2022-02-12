@@ -7,7 +7,6 @@ import MoviesListCard from "../../components/MoviesListCard/MoviesListCard";
 import './GenresFilterFilmsstyle.css';
 
 
-
 const GenresFilterFilms = () => {
 
     const {id} = useParams();
@@ -17,27 +16,18 @@ const GenresFilterFilms = () => {
 
     const dispatch = useDispatch();
 
-    useEffect(()=>{
-        dispatch(getGenresFilterById(id))
+    useEffect(() => {
+        dispatch(getGenresFilterById({id, page}));
     }, [id]);
 
-    useEffect(()=>{
-        dispatch(getGenresFilterById(page))
-    }, [page])
-
-
-
-
-
     const submitPrev = useCallback(() => {
-        dispatch((getGenresFilterById(page - 1)))
+        dispatch((getGenresFilterById({id, page: page - 1})))
     }, [page]);
 
 
     const submit = useCallback(() => {
-        dispatch((getGenresFilterById(page + 1)))
+        dispatch((getGenresFilterById({id, page: page + 1})))
     }, [page]);
-
 
     return (
         <div>

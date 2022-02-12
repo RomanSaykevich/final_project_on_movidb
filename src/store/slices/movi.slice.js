@@ -12,10 +12,9 @@ export const getAllMovies = createAsyncThunk(
     }
 )
 
-
 const initialState = {
     movies: [],
-    status:null,
+    status: null,
     page: 1,
 }
 
